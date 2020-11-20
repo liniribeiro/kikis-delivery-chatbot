@@ -1,0 +1,29 @@
+version: "2.0"
+
+rules:
+
+- rule: Say goodbye anytime the user says goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- rule: Say 'I am a bot' anytime the user challenges
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot
+
+- rule: Responde o que a kikis faz
+  steps:
+  - intent: what_kikis_do
+  - action: utter_what_kikis_do
+
+- rule: Fora de escopo
+  steps:
+  - intent: out_of_scope_random
+  - action: utter_out_of_scope_random
+
+- rule: say hello
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - action: utter_help

@@ -1,0 +1,106 @@
+version: "2.0"
+nlu:
+
+- intent: greet
+  examples: |
+    - olá
+    - oi
+    - ooii
+    - Bom dia
+    - Boa tarde
+    - Boa noite
+    - eae
+    - beleza
+    - Oe
+    - Ei cara
+    - bele
+    - dia
+
+- intent: goodbye
+  examples: |
+    - tchau
+    - até
+    - até mais
+    - até amanhã
+    - xau
+    - bye
+    - valeu
+    - falou
+
+- intent: affirm
+  examples: |
+    - sim
+    - s
+    - concordo
+    - com certeza
+    - mais é claro
+    - aham
+    - certo
+    - vamos nessa
+    - ok
+    - claro
+    - Sim eu gostaria muito de continuar
+    - Concordo plenamente com o que você falou
+
+- intent: deny
+  examples: |
+    - não
+    - n
+    - nunca
+    - Eu acho que não
+    - eu não gostaria disso
+    - de jeito nenhum
+    - nem que a vaca tussa
+    - deixa pra lá
+
+- intent: bot_challenge
+  examples: |
+    - Você é um bot?
+    - você é um humano?
+    - estou conversando com um bot?
+    - estou conversando com um humano?
+    - to falando com um robo?
+
+- intent: what_kikis_do
+  examples: |
+    - O que a você faz
+    - Com o que vocês trabalham
+    - O que é a Kikis Delivery Service?
+    - Como funciona a empresa
+    - Kiki delivery Service
+    - empresa
+    - Serviços de entrega da kiki
+
+- intent: delivery_schedule
+  examples: |
+    - Quero agendar uma entrega
+    - agendar entrega de um produto
+    - tentar demonstração
+    - desejo agendar o delivery de um produto
+    - Tenho um item para ser entregue
+    - Preciso entregar um produto
+    - entrega
+    - delivery
+
+- intent: out_of_scope
+  examples: |
+    - Não é isso que eu quero fazer
+    - espera, quero parar
+    - voce não está me ajudando
+    - Isto não me ajuda
+    - Isto não está funcionando
+    - Eu já te falei isso
+    - Não gosto disso
+    - Não quero te falar isso
+    - nNão é da tua conta
+    - deixa pra lá
+    - cala a boca
+    - quero fazer outra coisa
+    - mudei de ideia
+
+- intent: out_of_scope_random
+  examples: |
+    - Quantos anos você tem
+    - Quero fazer o pedido de uma pizza
+    - Previsão do tempo
+    - onde voce mora

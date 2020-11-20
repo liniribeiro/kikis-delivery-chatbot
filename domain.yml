@@ -1,0 +1,59 @@
+version: "2.0"
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+
+intents:
+- greet
+- goodbye
+- affirm
+- deny
+- bot_challenge
+- what_kikis_do
+- delivery_schedule
+- out_of_scope
+- out_of_scope_random
+
+slots:
+  name:
+    type: text
+    influence_conversation: false
+  message:
+    type: text
+    influence_conversation: false
+
+
+responses:
+  utter_greet:
+  - text: "Oi! Eu sou a Nena, assistente da Alini e estou aqui para te ajudar!"
+  utter_help:
+  - text: "Você pode me fazer perguntas como: \n- O que Kikis delivery Service ou agendar a entrega de algum produto!"
+  utter_what_kikis_do:
+  - text: "Serviços de entrega da Kiki é originalmente um filme do Studio Gihbli. É também a inspiração para todos os projetos que a Alini controi quando está estudando uma nova tecnologia."
+  utter_goodbye:
+  - text: "Tchau! Tenha um lindo dia!!"
+  utter_iamabot:
+  - text: "Eu sou um bot, a assistente virtual da Alini"
+  utter_delivery_schedule:
+  - text: "Infelizmente ainda não estou disponível para agendamentos, mas você gostaria de deixar um recado para minha criadora?"
+  utter_ask_name:
+  - text: "Qual seu nome?"
+  utter_ask_message:
+  - text: 'Qual seu recado?'
+  utter_ask_continue:
+  - text: 'Desculpa, eu não consegui entender. Você deseja continuar? '
+  utter_out_of_scope_random:
+  - text: Desculpe, ainda não fui treinada para responder isso!
+
+
+actions:
+- delivery_from_submit
+- utter_help
+
+forms:
+  delivery_from:
+    name:
+    - type: from_text
+    message:
+    - type: from_text
